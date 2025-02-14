@@ -2,6 +2,10 @@
 
 This repo contains the code and processing methodology related to earth observation using GEE and Python.
 
+# local environment setup guide
+
+https://www.lavivienpost.com/install-pytorch-gpu-on-windows-complete-guide/#1
+
 # Course outline
 
 1. Introduction
