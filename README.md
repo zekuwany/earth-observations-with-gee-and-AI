@@ -37,6 +37,7 @@ This repo contains the code and processing methodology related to earth observat
    4. time-series analysis for change detection
    5. Future LULC prediction
    6. MineNetCD
+   7. Prithivi model to predict LULC
 
 5. Extra resources
    1. Add dataset to Geopackage
