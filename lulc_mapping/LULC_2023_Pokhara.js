@@ -1956,3 +1956,27 @@ Export.image.toDrive({
     cloudOptimized: true,
   },
 });
+
+//==================================================
+// add slider to map UI
+//==================================================
+var leftMap = ui.Map()
+leftMap.setControlVisibility(false);
+leftMap.addLayer(imagery, rgb_viz, 'imagery')
+
+var rightMap = ui.Map()
+rightMap.setControlVisibility(false);
+rightMap.addLayer(lulc, {}, 'lulc', true)
+
+// Create a SplitPanel to hold the adjacent, linked maps.
+var splitPanel = ui.SplitPanel({
+  firstPanel: leftMap,
+  secondPanel: rightMap,
+  wipe: true,
+  style: {stretch: 'both'}
+});
+
+// Set the SplitPanel as the only thing in the UI root.
+ui.root.widgets().reset([splitPanel]);
+var linker = ui.Map.Linker([leftMap, rightMap]);
+leftMap.centerObject(aoi, 12);
