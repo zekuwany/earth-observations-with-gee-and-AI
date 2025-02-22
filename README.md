@@ -2,9 +2,15 @@
 
 This repo contains the code and processing methodology related to earth observation using GEE and Python.
 
-# local environment setup guide
+# TO DO top pariority
 
-https://www.lavivienpost.com/install-pytorch-gpu-on-windows-complete-guide/#1
+1. Remote Sensing Basic
+2. GEE Basic (Why GEE?)
+3. Flood mapping using Sentinel-1
+4. Landslide susceptibility
+5. LULC multi-temporal
+6. Course outline
+7. Course promotional video
 
 # Course outline
 
