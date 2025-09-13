@@ -17,7 +17,7 @@
 var dataset = ee
   .ImageCollection("LANDSAT/LC08/C02/T1_TOA")
   .filterDate("2021-01-01", "2021-12-31")
-  .filterBounds(ee.Geometry.Point([85.324, 27.717])); // Kathmandu
+  .filterBounds(ee.Geometry.Point([41.73, 9.25])); // Kathmandu
 
 // True color composite
 var visParams = { bands: ["B4", "B3", "B2"], min: 0, max: 0.3 };
