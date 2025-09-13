@@ -22,7 +22,7 @@ Map.addLayer(landsat.median(), visFalse, "Landsat False Color", false);
 // (Instruct participants to use the Geometry tools to draw polygons/points)
 
 // 6. Filter imagery by date and location
-var kathmandu = ee.Geometry.Point([85.324, 27.717]);
+var kathmandu = ee.Geometry.Point([41.73, 9.25]);
 var filteredLandsat = landsat
   .filterDate("2024-01-01", "2024-12-31")
   .filterBounds(kathmandu);
